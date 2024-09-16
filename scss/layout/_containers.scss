@@ -50,87 +50,6 @@ body {
     text-align: center;
     margin-top: 2rem;
     border-radius: 4px;
-
-
-
-    #navegacion-conent {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-
-        @media screen and (max-width:600px) {
-            flex-direction: column;
-        }
-
-        .main-header {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .header-logo {
-            width: 60px;
-            height: 60px;
-            background-image: url("/assets/images/logo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            transition: $defaultTransition;
-
-            &:hover {
-                transform: scale(1.2);
-                transition: $defaultTransition;
-                filter: drop-shadow(0 0 5px $baseColor);
-                margin-right: 5px;
-            }
-        }
-
-        .user-info {
-            display: flex;
-            margin-left: 10px;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            font-size: 12px;
-        }
-
-        .nav-items {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-
-            @media screen and (max-width:600px) {
-                flex-direction: column;
-                margin-top: 1rem;
-            }
-
-            li {
-                padding: 2px 15px;
-                margin: 0 3px;
-                border-radius: 5px;
-                transition: $defaultTransition;
-
-                &:hover {
-                    background-color: $baseColor;
-                    transition: $defaultTransition;
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-
-                a {
-                    color: $secondaryColorDark;
-                }
-
-                @media screen and (max-width:600px) {
-                    margin: 5px 0;
-                }
-            }
-        }
-    }
 }
 
 
@@ -140,20 +59,4 @@ body {
         min-height: 72vh;
     }
 
-    &.footer {
-        margin-top: 1rem;
-        box-sizing: border-box;
-
-        a {
-            text-decoration: none;
-            color: $secondaryColorDark;
-            font-weight: 700;
-            transition: $defaultTransition;
-
-            &:hover {
-                transition: $defaultTransition;
-                font-size: 17px;
-            }
-        }
-    }
 }

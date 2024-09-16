@@ -7,8 +7,7 @@ nav.innerHTML = `
     <div class="user-info">
         <span>${nombre}</span>
         <span>${apellido}</span>
-        <span>${dni}</span>
-    </div>
+        <span>DNI: <b>${dni}</b></span>    </div>
 </div>
 <ul class="nav-items">
     <li>
