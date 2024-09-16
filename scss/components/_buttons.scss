@@ -1,0 +1,48 @@
+$btnFontFamily: $headingFontFamily;
+$btnActive: $baseColor;
+
+
+.btnBase {
+    border: none;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin: 5px;
+    font-family: $btnFontFamily;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: darken($btnActive, 10%);
+    color: $white;
+    cursor: pointer;
+    transition: $defaultTransition;
+    min-width: 175px;
+
+    &:hover {
+        background-color: $btnActive;
+        transition: $defaultTransition;
+    }
+
+    &.secondary {
+        background-color: $secondaryColor;
+
+        &:hover {
+            background-color: lighten($secondaryColor, 10%);
+        }
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $disabledDark;
+        color: darken($disabledDark, 30%);
+    }
+
+    &.disrruptive {
+        background-color: $alternativeColor;
+
+        &:hover {
+            background-color: lighten($alternativeColor, 10%);
+        }
+    }
+
+}

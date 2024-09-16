@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Central de Turnos</title>
-    <link rel="stylesheet" href="css/theme.css">
-</head>
-<body>
-    
-    <h1>hola</h1>
-</body>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Section login -->
+    <div class="main-login" id="login-content">
+      <div class="login-container">
+        <div class="wrap-content">
+          <h1>Bienvenido a Central de turnos</h1>
+          <span>Ingrese sus credenciales para ingresar al portal</span>
+
+          <form method="post" class="login-user">
+            <div class="inputWrap inputUser">
+              <label for="username">Usuario:</label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="(dni afiliado)"
+              />
+            </div>
+
+            <div class="inputWrap inputPassword">
+              <label for="password">Contraseña:</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="******"
+              />
+            </div>
+            <div class="btn-container">
+              <a href="/" class="fgt-pass">Olvide mi contraseña</a>
+              <button type="submit" class="btnBase" id="submitLogin">
+                Ingresar
+              </button>
+            </div>
+            <a href="#" target="_blank" class="mobile-app">
+              <h2>Proximamente</h2>
+              <img src="assets/images/app-btn-google.png" alt="" />
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Section login -->
+
+    <script type="module" src="scripts/widgets/login.js"></script>
+  </body>
 </html>
